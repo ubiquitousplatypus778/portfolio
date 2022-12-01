@@ -1,0 +1,80 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+#page {
+  background-color: #aebdca;
+  font-family: 'Roboto', sans-serif;
+  color: #182747;
+}
+
+.section {
+  background-color: #e8dfca;
+  border-radius: 2rem;
+  padding: 3rem;
+  margin: 2rem;
+}
+
+.title {
+  margin: 0.5rem;
+}
+
+.sectiontitle {
+  margin-bottom: 1rem;
+}
+
+.minisectiontitle {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.imagediv {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.image {
+  padding: 1rem;
+  max-width: 30%;
+  max-height: 30rem;
+  border-radius: 15%;
+}
