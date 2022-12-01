@@ -4,38 +4,25 @@
 */
 
 
-/* indie-flower-regular - latin */
-@font-face {
-	/*font-family: "Indie Flower";*/
-	font-family: "Papyrus", "Courier New", fantasy;
-	font-style: normal;
-	font-weight: 400;
-	src: local("Indie Flower"), local("IndieFlower"), url("../fonts/indie-flower-v12-latin-regular.woff2") format("woff2"),
-		/* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/indie-flower-v12-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* dekko-regular - latin */
-@font-face {
-	font-family: "Papyrus", "Courier New", fantasy;
-	font-style: normal;
-	font-weight: 400;
-	src: local("Dekko"), url("../fonts/dekko-v7-latin-regular.woff2") format("woff2"),
-		/* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/dekko-v7-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
 body {
 	/*font-family: "Papyrus", "Courier New", fantasy;*/
 	/*background-color: #064490;*/
+}
+
+strong {
+    font-weight: bold;
+    opacity: 0.8;
 }
 
 h1,
 h2,
 h3,
 h4 {
-	font-family: 'Open Sans', sans-serif;
-	opacity: 0.7;
-	padding-top: 1rem;
 	padding-bottom: 1rem;
+	padding-top: 1rem;
+	font-family: 'Open Sans', sans-serif;
+	
+	font-weight: 1000;
 }
 h6 {
 	font-size: 1.5rem;
