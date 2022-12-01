@@ -1,0 +1,214 @@
+/*
+* Source of arrow:  https://codepen.io/jurbank/pen/WZovGE
+* 
+*/
+
+
+body {
+	/*font-family: "Papyrus", "Courier New", fantasy;*/
+	background-color: #fbf8ff;
+}
+
+strong {
+    font-weight: bold;
+    opacity: 1;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	padding-bottom: 1rem;
+	padding-top: 1rem;
+	font-family: 'Open Sans', sans-serif;
+	
+	font-weight: 1000;
+}
+
+h5 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 1000;
+}
+
+h6 {
+	font-size: 1.5rem;
+}
+h4 {
+	padding-top: 2rem;
+}
+.card{
+    border-radius: 4px;
+    background: #fbf8ff;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  	/* padding: 14px 80px 18px 36px; */
+  	cursor: pointer;
+}
+.card:hover{
+	transform: scale(1.05);
+ 	box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+.card-img-top {
+    width: 100%;
+    
+    object-fit: cover;
+}
+
+.btn:focus,
+.btn:hover {
+	filter: brightness(120%);
+}
+
+.nav-item:focus,
+.nav-item:hover {
+	filter: brightness(120%);
+}
+
+.btn-lg {
+	background-color: #2e6d79;
+	margin: 2rem 0;
+}
+
+.dream {
+	background: url(../bg2.jpg) center fixed;
+	background-size: cover;
+}
+
+.top-pane {
+	background:  center fixed;
+	background-size: cover;
+	height: calc(100vh - 60px);
+}
+
+.visual {
+	background: center fixed;
+	background-color: #E9640C;
+	background-size: cover;
+}
+
+/* .arrow,
+.arrow:before {
+  position: absolute;
+  left: 50%;
+}
+.arrow {
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  margin: -20px 0 0 -20px;
+  -webkit-transform: rotate(45deg);
+  border-left: none;
+  border-top: none;
+  border-right: 2px #fff solid;
+  border-bottom: 2px #fff solid;
+}
+  
+.arrow:before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  margin: -10px 0 0 -10px;
+  border-left: none;
+  border-top: none;
+  border-right: 1px #fff solid;
+  border-bottom: 1px #fff solid;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: arrow;
+}
+@keyframes arrow {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-10px, -10px);
+  }
+} */
+
+.paper-link {
+	text-decoration: none;
+	color: #2e6d79;
+}
+
+.app-link {
+	text-decoration: none;
+	color: lightgray;
+}
+
+.container {
+	max-width: 960px;
+}
+
+.article-entry {
+	align-items: center;
+}
+
+.article-entry p {
+	margin: 1rem 0;
+}
+
+.food-item {
+	width: 30rem;
+	height: 30rem;
+	object-fit: cover;
+}
+
+.nav-link {
+	font-size: 1rem;
+}
+
+
+h5 a {
+	text-decoration: none;
+	color: white;
+}
+
+.arrows {
+	width: 60px;
+	height: 72px;
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
+	bottom: 20px;
+}
+
+.arrows path {
+	stroke: #000;
+	fill: transparent;
+	stroke-width: 1px;	
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {	
+	animation-delay:0s;
+	-webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
