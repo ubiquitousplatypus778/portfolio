@@ -3,6 +3,100 @@
 * 
 */
 
+.title-word {
+  animation: color-animation 4s linear infinite;
+}
+
+.title-word-1 {
+  --color-1: #f36010;
+  --color-2: #3D8DAE;
+  --color-3: #e8716f;
+}
+
+.title-word-2 {
+  --color-1: #DBAD4A;
+  --color-2: #7aa29d;
+  --color-3: #77197c;
+}
+
+.title-word-3 {
+  --color-1: #ACCFCB;
+  --color-2: #E4A9A8;
+  --color-3: #ACCFCB;
+}
+
+.title-word-4 {
+  --color-1: #3D8DAE;
+  --color-2: #DF8453;
+  --color-3: #E4A9A8;
+}
+
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-1)}
+  33%   {color: var(--color-2)}
+  65%   {color: var(--color-2)}
+  66%   {color: var(--color-3)}
+  99%   {color: var(--color-3)}
+  100%  {color: var(--color-1)}
+}
+
+
+.typing {
+    position: relative;
+    /* -webkit-box-reflect: below 1px linear-gradient(transparent, #3333); */
+}
+
+.typing h2 {
+    position: relative;
+    color: #000000;
+    letter-spacing: 5px;
+	white-space: nowrap;
+    font-size: 5rem;
+    overflow: hidden;
+    margin-bottom: 0;
+    animation: type 5s steps(11) ;
+}
+
+@keyframes type {
+    0% {
+		width: 0px;
+	}
+    30% {
+		width: 30%;
+	}
+    60% {
+        /* width: 394.09px; */
+		width: 60%;
+    }
+	100% {
+        width: 1200px;
+    }
+}
+
+@media(max-width: 600px) {
+    .typing h2 {
+        font-size: 2rem;
+        animation: type 5s steps(0) ;
+    }
+	@keyframes type {
+		0% {
+			width: 0px;
+		}
+		30% {
+			width: 30%;
+		}
+		60% {
+			/* width: 394.09px; */
+			width: 60%;
+		}
+		100% {
+			width: 1200px;
+		}
+	}
+
+}
+
 
 body {
 	/*font-family: "Papyrus", "Courier New", fantasy;*/
@@ -21,7 +115,6 @@ h4 {
 	padding-bottom: 1rem;
 	padding-top: 1rem;
 	font-family: 'Open Sans', sans-serif;
-	
 	font-weight: 1000;
 }
 
