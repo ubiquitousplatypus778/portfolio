@@ -1,0 +1,118 @@
+/*
+* This website is adapted from Jeff's website used in the live coding video and the Bootstrap CSS file.
+* Source:  https://sleepcoacher.cs.brown.edu/
+*/
+
+
+body {
+	/*font-family: "Papyrus", "Courier New", fantasy;*/
+	/*background-color: #064490;*/
+}
+
+strong {
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	padding-bottom: 1rem;
+	padding-top: 1rem;
+	font-family: 'Open Sans', sans-serif;
+	
+	font-weight: 1000;
+}
+h6 {
+	font-size: 1.5rem;
+
+}
+
+h4 {
+	padding-top: 2rem;
+}
+
+.btn:focus,
+.btn:hover {
+	filter: brightness(120%);
+}
+
+.nav-item:focus,
+.nav-item:hover {
+	filter: brightness(120%);
+}
+
+.btn-lg {
+	background-color: #2e6d79;
+	margin: 2rem 0;
+}
+.opacity-2 {
+	opacity:0.4!important;
+}
+.opacity-5 {
+	opacity:1!important;
+  }
+
+.dream {
+	background: url(../bg2.jpg) center fixed;
+	background-size: cover;
+}
+
+.top-pane {
+	background: url(../main.png) center fixed;
+	/* --bs-bg-opacity: 0.5; */
+	
+	background-size: cover;
+	height: calc(100vh );
+}
+
+.visual {
+	background: center fixed;
+	background-color: #E9640C;
+	/* background-color: #ff943f; */
+	background-size: cover;
+}
+
+
+.row { /* temporary, should be fixed in https://github.com/twbs/bootstrap/pull/31649/commits/1ee994700443fc65134de32a0be89ab1e49ad01e */
+	/*--bs-gutter-x: 2rem;*/
+}
+
+.paper-link {
+	text-decoration: none;
+	color: #2e6d79;
+}
+
+.app-link {
+	text-decoration: none;
+	color: lightgray;
+}
+
+.container {
+	max-width: 960px;
+}
+
+.article-entry {
+	align-items: center;
+}
+
+.article-entry p {
+	margin: 1rem 0;
+}
+
+.food-item {
+	width: 30rem;
+	height: 30rem;
+	object-fit: cover;
+}
+
+.nav-link {
+	font-size: 1rem;
+}
+
+
+h5 a {
+	text-decoration: none;
+	color: white;
+}
