@@ -2,7 +2,10 @@
 * Source of arrow:  https://codepen.io/jurbank/pen/WZovGE
 * 
 */
-
+#bottom {
+	position: absolute;
+	bottom: 0;
+}
 .title-word {
   animation: color-animation 4s linear infinite;
 }
@@ -74,7 +77,49 @@
     }
 }
 
+@media(max-width: 800px) {
+    .typing h2 {
+        font-size: 4rem;
+        animation: type 5s steps(0) ;
+    }
+	@keyframes type {
+		0% {
+			width: 0px;
+		}
+		30% {
+			width: 30%;
+		}
+		60% {
+			/* width: 394.09px; */
+			width: 60%;
+		}
+		100% {
+			width: 1200px;
+		}
+	}
+}
 @media(max-width: 600px) {
+    .typing h2 {
+        font-size: 3rem;
+        animation: type 5s steps(0) ;
+    }
+	@keyframes type {
+		0% {
+			width: 0px;
+		}
+		30% {
+			width: 30%;
+		}
+		60% {
+			/* width: 394.09px; */
+			width: 60%;
+		}
+		100% {
+			width: 1200px;
+		}
+	}
+}
+@media(max-width: 473px) {
     .typing h2 {
         font-size: 2rem;
         animation: type 5s steps(0) ;
@@ -94,7 +139,27 @@
 			width: 1200px;
 		}
 	}
-
+}
+@media(max-width: 371px) {
+    .typing h2 {
+        font-size: 1.5rem;
+        animation: type 5s steps(0) ;
+    }
+	@keyframes type {
+		0% {
+			width: 0px;
+		}
+		30% {
+			width: 30%;
+		}
+		60% {
+			/* width: 394.09px; */
+			width: 60%;
+		}
+		100% {
+			width: 1200px;
+		}
+	}
 }
 
 
